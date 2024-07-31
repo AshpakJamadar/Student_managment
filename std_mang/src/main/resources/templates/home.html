@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <div th:if="${session.user==null }">
+  <h3 style="color: greenyellow;"  th:text="${success}"></h3>
+  <a href="/signup"><button>signin</button></a>
+  <a href="/login"><button>login</button></a>
+  </div>
+
+  <div th:if="${session.user}">
+    <h3 style="color: greenyellow;"  th:text="${success}"></h3>
+    <a href="/insert"><button>Insert Student Details</button></a>
+    <a href="/fetch"><button>Fetch Student details</button></a>
+    <a href="/update"><button>Update Student details</button></a>
+    <a href="/delete"><button>Delete Student Details</button></a>
+    <a href="/logout"><button>Logout</button></a>
+  </div>
+
+</body>
+</html>
