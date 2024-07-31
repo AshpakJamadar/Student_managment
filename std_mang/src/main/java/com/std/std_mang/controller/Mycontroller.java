@@ -170,8 +170,8 @@ public class Mycontroller {
 
 
     public String addToCloudinary(MultipartFile image) {
-      Cloudinary cloudinary = new Cloudinary(ObjectUtils.asMap("cloud_name", "djvgablnu", "api_key",
-          "995217789434345", "api_secret", "RVf5vkoM3ufgxSIufvaMXPknZ_M", "secure", true));
+      Cloudinary cloudinary = new Cloudinary(ObjectUtils.asMap("cloud_name", "your loud name", "api_key",
+          "your api key", "api_secret", "yor secret key", "secure", true));
       Map resume = null;
       try {
         Map<String, Object> uploadOptions = new HashMap<String, Object>();
